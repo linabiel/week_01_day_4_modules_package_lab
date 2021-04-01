@@ -15,7 +15,7 @@ while (True):
     elif option == '3':
         print_list(get_completed_tasks(tasks))
     elif option == '4':
-        description = input("Enter task description to search for: ")
+        description = function_2()
         task = get_task_with_description(tasks, description)
         if task != "Task Not Found":
             mark_task_complete(task)
